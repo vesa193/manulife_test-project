@@ -1,0 +1,35 @@
+<div class="reveal modal" id="exampleModal1" data-reveal>
+              <p class="modal__title modal__title--bold"><small class="">Title goes here</small></p>
+              <small class="modal__title">Sellect all that apply.</small>
+              <div class="row modal__row">
+                <div class="small-12 columns modal__col-12">
+                  <div class="small-3 columns modal__col">
+                    <i class="modal__icon fa fa-medkit"></i>
+                    <h4 class="modal__ttl modal__ttl--first">Medical Expenses</h4>
+                    <p>If i get sick od injured while travelling, i want my emergency medical exepeses to be insured.</p>
+                  </div>
+                  <div class="small-3 columns modal__col">
+                    <i class="modal__icon fa fa-ban"></i>
+                    <h4 class="modal__ttl modal__ttl--second">NON-REFUNDABLE TRIP COSTS</h4>
+                    <p>I want insurance that would cover my prepaid non-refundable trip costs if I had to cancle my trip or unexepctedly return home.</p>
+                  </div>
+                  <div class="small-3 columns modal__col">
+                    <i class="modal__icon fa fa-suitcase"></i>
+                    <h4 class="modal__ttl modal__ttl--third">BAGGAGE</h4>
+                    <p>Sometimes baggage is lost, damaged or delayed. I want insurance that would replace my clothes and other important items if that happened to me.</p>
+                  </div>
+                  <div class="small-3 columns modal__col">
+                    <i class="modal__icon fa fa-ambulance"></i>
+                    <h4 class="modal__ttl modal__ttl--fourth">FILGHT AND TRAVEL ACCIDENT</h4>
+                    <p>I want an insurance benefit in the case of accidental death or dismemberment during my trip.</p>
+                  </div>
+                </div>  
+              </div>
+              <div class="buttons buttons--modal">
+                  <a class="buttons__btn-back  buttons--modal__btn-back cancel" href="#">Cancel</a>
+                  <a class="buttons__btn buttons--modal__btn" href="#">See Recommendation</a>
+              </div>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button> 
+            </div>  

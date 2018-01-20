@@ -1,0 +1,42 @@
+@import ../variables/variables.sass
+@import ../mixins/mixins.sass
+@import url(https://fonts.googleapis.com/css?family=Roboto)
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: $base-font 
+body 
+	background: $bgd-color 
+
+
+ul 
+	margin: 0
+
+	li 
+		list-style: none
+
+a 
+	text-decoration: none
+
+.wrap 
+	width: 100%
+	height: auto
+	padding: 0em.6em
+.flex-wrap
+	+flexbox()
+	+justify-content(center)
+	&__wrapper 
+		width: 80%
+		height: auto
+		padding-bottom: 10px
+		background: $wrapper-bgd
+
+header 
+	width: 100%
+	margin-bottom: .1em
+
+footer 
+	width: 100%
+	margin-top: 2.5em		

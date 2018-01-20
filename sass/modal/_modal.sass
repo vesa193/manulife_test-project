@@ -1,0 +1,70 @@
+@import ../variables/variables.sass
+@import ../mixins/mixins.sass
+
+
+.reveal
+	width: 45%
+	
+
+.modal
+	width: 50%
+	height: auto
+
+	&__title
+		color: $gray
+		
+		&--bold
+			font-weight: $bold
+
+	&__row
+		+flexbox()
+		+align-items(start)
+		margin: 20px 0
+		height: 320px
+	&__col-12
+		height: 100%
+		+flexbox
+		+justify-content(space-between)
+		+align-items(besline)
+		
+	&__col
+		+flexbox
+		+flex-direction(column)
+		+justify-content(besline)
+		+align-items(center)
+		+transition(border-color, .4s, ease-in-out)
+		width: 22%
+		height: 320px
+		border: 2px solid #ccc
+		+border-radius(4px)
+		padding: 10px
+
+		&:hover
+			border-color: $link-active
+			
+			i
+				color: $link-active
+				+transition(color, .4s, ease-in-out)
+		h4
+			text-align: center
+			font-size: 1em
+			font-weight: $bold
+			color: $nav-top
+		p	
+			font-size: $span-size
+			color: $gray
+			margin-bottom: 0
+
+	&__icon
+		font-size: 2em		
+		color: $nav-top
+		margin-bottom: .5em
+
+
+
+.modal__ttl
+	&--first
+		margin-bottom: 2em
+	
+	&--third
+		margin-bottom: 3.2em		

@@ -1,0 +1,158 @@
+@import ../variables/variables.sass
+@import ../mixins/mixins.sass
+
+
+.footer
+	.wrap
+		width: 100%
+		background: #fff
+
+
+.contact
+	background: #eee
+	margin: 0 10px
+
+	&__cont 
+		margin: 0 10px
+		background: #eee
+		padding: 40px 20px
+
+	&__wrap
+		+flexbox()
+		+justify-content(space-between)
+		width: 70%
+		
+		.part
+			width:  30%
+			
+			&__title
+				color: $nav-bgd
+				font-size: $h6-size
+				font-weight: $bold
+			
+			hr
+				margin: 5px 0 10px 0
+			
+			ul
+				margin: 0
+
+
+.contact-menu
+	
+	&__item
+		
+	&__link
+		font-size: $ftr-link
+		color: #000
+		
+	&__text
+		font-size: $ftr-link
+		color: #000
+		&--bold
+			font-weight: $bold
+		&--second
+			margin-bottom: 0
+
+
+.part__icons
+	+flexbox
+	+justify-content(space-between)
+	&__link
+		+flexbox
+		+justify-content(center)
+		+align-items(center)
+		width: 35px
+		height: 35px
+		+border-radius(50%)
+		color: #fff
+		text-align: center
+		padding: 10px
+		background: black
+		&:hover
+			color: white
+
+		&:nth-child(1)								
+			background: $fb
+		&:nth-child(2)								
+			background: $tw	
+		&:nth-child(3)								
+			background: $insta
+		&:nth-child(4)								
+			background: $in
+		&:nth-child(5)								
+			background: $yt
+
+
+.copyright
+	background: gainsboro
+	width 100%
+	+flexbox()
+	margin: 0 10px
+	padding: 20px 0 0 20px
+	&__text
+		width: 50%
+		padding-bottom: 10px
+		color: $gray
+		h4				
+			font-size: $h4-size
+			font-weight: 500
+
+		span
+			font-size: $span-size
+			font-weight: 500
+
+	&__linx
+		+flexbox()
+		+flex-direction(column)
+		+justify-content(space-between)
+		+align-items(flex-end)		
+		width: 50%
+	
+	&__logo
+		position: relative
+		width: 30%
+		height: 50px
+		background: #fff
+		+flexbox
+		+align-items(center)
+		
+		&__item
+			width: 100%;
+			height: 100%
+			position: relative
+			display: inline-block
+			color: #fff
+
+			&:before
+			  content: ''
+			  position: absolute
+			  top: 0; left: 0
+			  width: 100%; height: 100%
+			  background: #fff
+			  +transform-origin(100% 0)
+			  +transform(skew(-45deg))
+			  z-index: 1
+
+	&__logo__img
+		position: absolute
+		width: 100%
+		height: 100%
+		+background('../../img/manulife.png', center, no-repeat)
+		+background-size(contain)
+		z-index: 2
+		
+			
+
+
+.copy
+	width: 60%
+	+flexbox()
+	+justify-content(space-around)
+	+align-items(center)
+	margin-right: 20px
+
+	&__link
+		font-size: $span-size
+		color: $gray
+		font-weight: $bold
+

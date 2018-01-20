@@ -1,0 +1,88 @@
+@import ../variables/variables.sass
+@import ../mixins/mixins.sass
+
+.form-steps
+  width: 50%
+  clear: both
+  margin-bottom: 20px
+  &:before
+    display: table
+    content: ""
+  &:after
+    display: table
+    content: ""
+    clear: both
+
+.form-steps__step
+  width: 33.33333%
+  float: left
+  padding: 1em
+  text-align: center
+  position: relative
+  &:after
+    content: ""
+    background: #ccc
+    height: .4em
+    top: 1.9em
+    left: 50%
+    width: 100%
+    display: block
+    position: absolute
+    z-index: 1
+  &:before
+    content: ""
+    background: #fff
+    height: .4em
+    top: 1.9em
+    left: 50%
+    margin-left: -2em
+    display: block
+    position: absolute
+    z-index: 2
+
+.form-steps__step--last:after
+  display: none
+
+.form-steps__step--active .form-steps__step-circle
+  background: $nav-bgd
+  border: 1px solid $nav-bgd
+  color: white
+
+.form-steps__step--completed
+  &:after
+    background: #ccc
+  .form-steps__step-circle
+    background: $nav-bgd
+    border: 1px solid $nav-bgd
+    color: white
+    .form-steps__step-number
+      display: none
+    .form-steps__step-check
+      display: inline-block
+
+.form-steps__step-circle
+  +flexbox()
+  +justify-content(center)
+  +align-items(center)
+  background: $gray
+  border: 1px solid $gray
+  line-height: 3.2em
+  +border-radius(50%)
+  height: 2em
+  width: 2em
+  text-align: center
+  color: white
+  margin: 0 auto
+  position: relative
+  z-index: 3
+
+.form-steps__step-check
+  display: none
+
+.form-step__step-name
+  color: $gray
+  margin-top: .8em
+  display: inline-block
+  font-size: 1em
+  line-height: 1.4em
+	

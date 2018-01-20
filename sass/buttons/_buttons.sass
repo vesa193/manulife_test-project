@@ -1,0 +1,81 @@
+@import ../variables/variables.sass
+@import ../mixins/mixins.sass
+
+
+
+//Buttons for decisions 
+
+.table__link	
+
+		border: 2px solid #ccc
+		+border-radius(4px)
+		color: $gray
+		padding: 10px 20px
+
+		&--first
+			   border-top-right-radius: 0
+			   border-bottom-right-radius: 0
+
+
+		&--second
+				 border-top-left-radius: 0
+				 border-bottom-left-radius: 0
+				 border-left: 0   
+
+
+//Buttons for choosing
+
+.btn
+	+flexbox()
+	+justify-content(center)
+	+align-items(center)
+
+	&__button
+		+border-radius(4px)
+		font-size: $btn-font
+		background: $link-active
+		color: #fff
+		padding: 10px 20px
+
+		&:hover
+			color: #fff
+
+
+.buttons
+	width: 70%
+	+flexbox()
+	+justify-content(space-between)
+	margin: 1em
+	
+	&--top
+		+justify-content(flex-end)
+	
+	&__btn
+		+border-radius(4px)
+		font-size: 1em
+		background: $link-active
+		color: #fff
+		padding: 10px 20px
+
+		&:hover
+			color: #fff
+
+	&__btn-back
+		+border-radius(4px)
+		//font-size: $btn-font
+		border: 2px solid $link-active
+		color: $link-active
+		padding: 10px 20px
+		
+		&:hover
+			color: $link-active
+
+
+.buttons--modal
+	width: 100%
+	margin: 0
+	
+
+.cancel
+	width: 200px
+	text-align: center
